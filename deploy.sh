@@ -18,6 +18,3 @@ cd react
 #building
 chmod +x build.sh
 ./build.sh
-#dockerhub push
-docker login --username=$docker_username --password=$docker_password
-echo $docker_password | docker login -u $docker_username --password-stdin
