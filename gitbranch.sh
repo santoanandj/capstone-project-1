@@ -1,5 +1,5 @@
 #!/bin/bash
-if [[$GIT_BRANCH == origin/dev]]
+if [[ $GIT_BRANCH == origin/dev ]]
 then
         chmod +x deploy.sh
         ./deploy.sh
@@ -8,7 +8,7 @@ then
         #dockerhub push
         docker login --username=$docker_username --password=$docker_password
         echo $docker_password | docker login -u $docker_username --password-stdin
-elif [[$GIT_BRANCH == origin/main]]
+elif [[ $GIT_BRANCH == origin/main ]]
 then
         chmod +x deploy.sh
         ./deploy.sh
