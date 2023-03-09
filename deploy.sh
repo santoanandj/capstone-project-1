@@ -7,4 +7,4 @@ cd react
 #building
 chmod +x build.sh
 ./build.sh
-#building
+#buildingscript
