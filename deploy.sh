@@ -21,5 +21,3 @@ chmod +x build.sh
 #dockerhub push
 docker login --username=$docker_username --password=$docker_password
 echo $docker_password | docker login -u $docker_username --password-stdin
-docker tag react:v1 santoanandj/dev:v1
-docker push santoanandj/dev:v1
