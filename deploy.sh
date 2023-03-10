@@ -7,7 +7,7 @@ scp -o StrictHostKeyChecking=no -i $key react.tar.gz ubuntu@3.110.182.16:/home/u
 ssh -T -o StrictHostKeyChecking=no -i $key ubuntu@3.110.182.16<<EOF
 cd /home/ubuntu
 rm -rf react || true
-sudo docker system prune
+sudo docker system prune -y
 tar -xvzf react.tar.gz
 #deploy on which git branch commit had happen
 if [[ $GIT_BRANCH == origin/dev ]]
