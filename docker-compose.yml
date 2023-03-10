@@ -2,7 +2,7 @@ version: "3.8"
 services:
   reactdemoapp:
     image: react:v1
-    container_name: reactapp
+    container_name: react_app
     restart: always
     ports:
       - "80:80"
